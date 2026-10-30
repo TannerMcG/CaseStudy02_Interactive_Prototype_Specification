@@ -1,0 +1,139 @@
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f4f4;
+    color: #222;
+}
+
+header {
+    background-color: #222;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+main {
+    max-width: 1100px;
+    margin: 30px auto;
+    padding: 0 20px;
+}
+
+h2 {
+    margin-top: 25px;
+}
+
+.filter-panel {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 25px;
+}
+
+input, select {
+    padding: 12px;
+    margin: 5px;
+    min-height: 44px;
+    border: 1px solid #999;
+    border-radius: 5px;
+}
+
+button {
+    padding: 12px 18px;
+    min-height: 44px;
+    border: none;
+    border-radius: 5px;
+    background-color: #234578;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #183eaa;
+}
+
+button:active {
+    background-color: #102b78;
+}
+
+button:focus-visible,
+input:focus-visible,
+select:focus-visible {
+    outline: 2px solid orange;
+    outline-offset: 2px;
+}
+
+button:disabled {
+    background-color: #999;
+    cursor: not-allowed;
+}
+
+.shop-layout {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 20px;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+}
+
+.product-card {
+    background: white;
+    padding: 18px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+.product-card h3 {
+    margin-top: 0;
+}
+
+.product-card p {
+    color: #555;
+}
+
+.product-card:hover {
+    border-color: #234578;
+}
+
+.cart-panel {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    height: fit-content;
+}
+
+.cart-item {
+    padding: 12px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.cart-item button {
+    margin: 5px 3px;
+}
+
+#cart-total {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.error-message {
+    color: red;
+}
+
+.live-status {
+    color: green;
+}
+
+/* Mobile Layout */
+@media (max-width: 700px) {
+    .shop-layout {
+        grid-template-columns: 1fr;
+    }
+
+    .product-grid {
+        grid-template-columns: 1fr;
+    }
+}

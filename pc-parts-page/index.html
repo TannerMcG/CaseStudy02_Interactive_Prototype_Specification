@@ -67,7 +67,7 @@
                                 autocomplete="off"
                             >
 
-                            <button type="submit" class="button button-primary">Search</button>
+                            <button type="button" class="button button-primary">Search</button>
                         </div>
 
                         <div class="filter-row">
@@ -90,6 +90,7 @@
                                 <label for="sort-filter">Sort By</label>
 
                                 <select id="sort-filter" name="sort">
+                                    <option value="default">Default</option>
                                     <option value="price-low">Price: Low to High</option>
                                     <option value="price-high">Price: High to Low</option>
                                     <option value="name">Name: A to Z</option>
@@ -119,7 +120,7 @@
                         </p>
                     </div>
 
-                    <div id="product-gird" class="product-grid">
+                    <div id="product-grid" class="product-grid">
                         <!-- Product cards will by created in JS -->
                     </div>
 
@@ -135,7 +136,7 @@
                         <h2 id="cart-heading">Your Cart</h2>
                     </div>
 
-                    <span id="cart-item-count" class="cart-count">0</span>
+                    <span id="cart-count" class="cart-count">0</span>
                 </div>
 
                 <div id="cart-items" class="cart-items">
@@ -155,7 +156,7 @@
                         Shipping and taxes are not included.
                     </p>
 
-                    <button type="button" id="clear-cart"
+                    <button type="button" id="clear-cart-button"
                             class="button button-secondary button-full"
                             disabled>
                         Clear Cart
