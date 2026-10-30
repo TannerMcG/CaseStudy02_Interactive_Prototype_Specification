@@ -127,6 +127,60 @@ button:disabled {
     color: green;
 }
 
+.site-header {
+    background-color: #111826;
+    color: white;
+}
+
+.header-inner {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 16px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+}
+
+.site-header a,
+.site-header a:visited,
+.site-header a:hover,
+.site-header a:focus-visible {
+    color: white;
+    text-decoration: none;
+}
+
+.brand,
+.main-nav a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 44px;
+    min-width: 44px;
+    padding: 10px 14px;
+    border-radius: 8px;
+}
+
+.main-nav {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+
+.brand-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 28px;
+    height: 28px;
+    margin-right: 8px;
+    border-radius: 6px;
+    background: white;
+    color: #111826;
+    font-weight: bold;
+}
+
 /* Mobile Layout */
 @media (max-width: 700px) {
     .shop-layout {
