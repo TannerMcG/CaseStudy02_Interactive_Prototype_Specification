@@ -96,17 +96,17 @@ Implement end-to-end interactivity for both core flows from phase 2 with interac
 
 ## 5. Depoyment, Testing & Final Packaging
 
-1. # Deploy to Vercel:
+1. ### Deploy to Vercel:
   * **Import**
     `TannerMcG/CaseStudy02_Interactive_Prototype_Specificaion` into Vercel.
   * Set **Root Directory** to `phase3_prototype` an deploy.
   * Place the live Vercel URL prominently at the top of the root `README.md`
-2. # Run Summative Usability Study (3-5 Participants):
+2. ### Run Summative Usability Study (3-5 Participants):
   * Exectue the standardized testing protocol (`emirical_usability/Usability_Protocol_SUS.pdf`) on the live Vercel prototype.
   * Log `Task_Completion_Time_sec`, binary `Task_Completion_Rate`, and `Error_Frequency` across both tasks.
   * Administer your Google Forms 10-item SUS survey and calculate the normalized score:
     ### SUS = [$\sum$(Odd Item Score - 1) + $\sum$(5 - Even Item Scores)] x 2.5
   * Compare Phase 3 SUS and error rates against phase 1 diagnostic baseline.
-3. # Final Repository Deliverables:
+3. ### Final Repository Deliverables:
   * `phase3_prototpye/` (Complete Vue 3 + TypeScript source code)
   * `Phase3_Verification_Report.pdf` (or comprehensive `README.md` covering design tokens, audit screenshots, SUS benchmark comparison, and two Post-Mortem Reflection answers)
